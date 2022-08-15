@@ -1,0 +1,29 @@
+.headerDiv{
+    display: flex;
+    justify-content: space-between;
+    background-color:aquamarine;
+    padding: 1rem;
+}
+.headerLogo{
+    margin: 0px;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+
+}
+.navDiv{
+    background-color: aqua;
+    width: 30%;
+    border-radius: 5px;
+    padding: 0.3rem;
+    margin: 5px;
+}
+.divPalabra{
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    font-size: 1.1rem;
+}
