@@ -1,7 +1,8 @@
+import { Carrito } from '../Carrito/Carrito';
 import './Header.css';
 
 
-function Header(){
+export function Header(){
     return(
         <div className='headerDiv'>
             <div>
@@ -15,14 +16,11 @@ function Header(){
                 <a className='divPalabra' href=''>productos</a>
                 </div>
                 <div className='navDiv'>
-                <a className='divPalabra' href=''>informacion</a>
-                </div>
-                <div className='navDiv'>
                 <a className='divPalabra' href=''>contacto</a>
                 </div>
             </div>
+            <Carrito></Carrito>
         </div>
     )
 }
 
-export default Header;
