@@ -6,10 +6,15 @@ import {ItemListContainer} from './components/ItemListContainer/ItemListContaine
 
 
 function App() {
+
+  const agregar = (contador)=>{
+    console.log(`productos agregados:${contador}`)
+  }
+
   return (
     <div className="App">
-     <Header></Header>
-     <ItemListContainer texto="estos son nuestros productos"></ItemListContainer>
+     <Header/>
+     <ItemListContainer stock={10} inicial={1} agregarCarrito={agregar}></ItemListContainer>
     </div>
   );
 }
