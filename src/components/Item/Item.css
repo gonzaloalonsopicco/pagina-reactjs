@@ -1,0 +1,51 @@
+.articleDivProductos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgb(0 0 0 / 9%);
+    background: white;
+}
+
+.articleTituloProductos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+.articleDivFotosProductos {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.articleFotosProductos {
+    width: 90%;
+    display: block;
+    margin: 1rem ;
+}
+
+.articleDivBotonPrecio {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.articleBotonCarrito {
+    margin: 0.3125rem;
+    padding: 0.25rem 0.5rem;
+    background: rgb(101, 214, 240);
+    border-color: rgb(101, 214, 240);
+}
+
+.articlePrecio {
+    margin: 0px;
+    padding: 0.25rem 0.5rem;
+    font-family: 'Antonio', sans-serif;
+}
