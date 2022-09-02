@@ -1,29 +1,23 @@
 import './ItemList.css'
 import { Item } from "../Item/Item"
-import {listaProductos} from '../../productos'
 import { useEffect, useState } from 'react'
-
+import {listaProductos} from '../../productos'
+import { cargaProductos } from '../../productos'
 
 export function ItemList (){
 
     const [componentes, setComponentes] = useState([]);
 
-    const cargaProductos = ()=>{
-        return new Promise((resolve, reject) =>{
-            setTimeout(() => {
-                resolve(listaProductos)
-            },2000);
-        })
-    }
-
+    let err 
 
     useEffect(()=>{
         const funcionAsincrona = async()=>{
             try{
                 const listado = await cargaProductos();
                 setComponentes(listado)
-            }catch(arror){
-                console.log("hubo un error")
+            }catch(err){
+                err='hubo un error al traer los productos de la base de datos. Error ocurrido en ItemListContainer'
+                console.log(err.name)
             }
         }
         funcionAsincrona();
@@ -35,13 +29,12 @@ export function ItemList (){
         <div className="article">
 
         {
-            componentes.length > 0 &&
 
-                <>
-                        <Item componente={componentes[0]} />
-                        <Item componente={componentes[1]} />
-                        <Item componente={componentes[2]} />
-                </>
+           componentes.map((componente)=> {
+            return (
+                <Item key={componente.id} componente={componente}/>
+            )
+           })
 
         }
         </div>

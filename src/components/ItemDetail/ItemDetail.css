@@ -1,0 +1,32 @@
+.DivItemDetallado{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    grid-gap: 2rem;    
+    padding: 4rem;
+    background: #eee
+}
+
+.divImagenDetallado{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgb(0 0 0 / 30%);
+    background: #fdfdfd;
+}
+.imagenDetallado{
+    width: 90%;
+}
+.precio{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+.boton{
+    margin: 0.3125rem;
+    padding: 0.25rem 0.5rem;
+    background: rgb(101, 214, 240);
+    border-color: rgb(101, 214, 240);
+}
+.descripcion{
+    font-size: 2rem;
+}

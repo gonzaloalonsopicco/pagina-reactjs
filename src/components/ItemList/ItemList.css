@@ -1,7 +1,6 @@
 .article{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     height: 100%;
     grid-gap: 2rem;    
     padding: 5rem;
