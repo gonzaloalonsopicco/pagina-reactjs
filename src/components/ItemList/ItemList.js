@@ -8,8 +8,6 @@ export function ItemList (){
 
     const [componentes, setComponentes] = useState([]);
 
-    let err 
-
     useEffect(()=>{
         const funcionAsincrona = async()=>{
             try{
@@ -23,12 +21,22 @@ export function ItemList (){
         funcionAsincrona();
     },[])
 
+    
+
 
     return(
 
         <div className="article">
 
-        {
+        {/*
+            componentes.length > 0 &&
+
+                <>
+                        <Item componente={componentes[0]} />
+                        <Item componente={componentes[1]} />
+                        <Item componente={componentes[2]} />
+                </>
+*/
 
            componentes.map((componente)=> {
             return (

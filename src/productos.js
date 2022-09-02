@@ -27,8 +27,8 @@ export const listaProductos = [
         precio:'$250',
         imagen: memoriasRam,
         descripcion:'kasdd'
-    }
-    
+    },
+
 ]
 
 
@@ -36,6 +36,23 @@ export const cargaProductos = ()=>{
     return new Promise((resolve, reject) =>{
         setTimeout(() => {
             resolve(listaProductos)
-        },2000);
+        },100);
     })
 }
+
+/*
+export const cargaProductos = new Promise((resolve, reject) =>{
+        setTimeout(() => {
+            resolve(listaProductos)
+        },2000);
+ })
+*/
+
+/*
+export const cargaProductos = ()=>{
+    return new Promise((resolve, reject) =>{
+        setTimeout(() => {
+            resolve(listaProductos)
+        },2000);
+    })
+}*/
