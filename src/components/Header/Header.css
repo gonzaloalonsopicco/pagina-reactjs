@@ -4,8 +4,12 @@
     background-color:aquamarine;
     padding: 1rem;
 }
+.divLogo{
+    text-decoration: none;
+}
 .headerLogo{
     margin: 0px;
+    color: black;
 }
 .nav{
     display: flex;
@@ -15,11 +19,12 @@
 
 }
 .navDiv{
-    background-color:#8fffda;
-    width: 30%;
+    width: 20%;
+    background-color: #8fffda;
     border-radius: 5px;
-    padding: 0.3rem;
+    padding: 0.4rem;
     margin: 5px;
+    text-decoration: none;
 }
 .divPalabra{
     color: white;

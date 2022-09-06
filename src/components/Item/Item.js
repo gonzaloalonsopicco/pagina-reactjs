@@ -14,8 +14,7 @@ export function Item ({componente}){
                     <img src={componente.imagen} className="articleFotosProductos"></img>
                 </div>
                 <div className="articleDivBotonPrecio">
-                    <button id="" className="btn btn-primary articleBotonCarrito">Agregar</button>
-                    <button id="" className="btn btn-primary articleBotonCarrito">ver mas</button>
+                    <p className="articlePrecio">precio</p>
                     <p className="articlePrecio">{componente.precio} </p>
                 </div>
             </div>

@@ -1,0 +1,11 @@
+.divAside{
+    display: flex;
+    grid-area: aside;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgb(0 0 0 / 9%);
+    background: white;
+}

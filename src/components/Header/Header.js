@@ -1,23 +1,19 @@
-import { Carrito } from '../Carrito/Carrito';
 import './Header.css';
+import { Link } from 'react-router-dom';
+import { Carrito } from '../Carrito/Carrito';
+
+
 
 
 export function Header(){
-    return(
+    return (
         <div className='headerDiv'>
-            <div>
-                <h1 className='headerLogo'>componentes pc</h1>
-            </div>
+            <Link to="/" className='divLogo'><h1 className='headerLogo'>componentes pc</h1></Link>
             <div className='nav'>
-                <div className='navDiv'>
-                    <a className='divPalabra' href=''>inicio</a>
-                </div>
-                <div className='navDiv'>
-                <a className='divPalabra' href=''>productos</a>
-                </div>
-                <div className='navDiv'>
-                <a className='divPalabra' href=''>contacto</a>
-                </div>
+                <Link to="/" className='navDiv'><a className='divPalabra'>inicio</a></Link>                
+                <Link to="/productos" className='navDiv'><a className='divPalabra'>productos</a></Link>  
+                <div className='navDiv'><a className='divPalabra'>contacto</a></div>
+                {/* <Link to="/contacto" className='navDiv'><a className='divPalabra'>contacto</a></Link> */}
             </div>
             <Carrito></Carrito>
         </div>
