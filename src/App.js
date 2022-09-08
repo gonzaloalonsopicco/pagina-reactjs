@@ -6,7 +6,7 @@ import {InicioContainer} from './components/InicioContainer/InicioContainer';
 import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailContainer';
 import {ItemListContainer} from './components/ItemListContainer/ItemListContainer';
 import { FiltroContainer } from './components/FiltroContainer/FiltroContainer';
-
+import {CarritoContainer} from './components/CarritoContainer/CarritoContainer'
 
 function App() {
 
@@ -21,8 +21,9 @@ function App() {
           <Route path='/productos' element={<ItemListContainer />} ></Route>
           {/* <Route path='/contacto' element={<ItemDetailContainer />} ></Route> */}
           <Route path='/productos/:categorias' element={<ItemListContainer />} ></Route>
-          <Route path='/item/:ids' element={<ItemDetailContainer />} ></Route>          
-        </Routes>
+          <Route path='/item/:ids' element={<ItemDetailContainer />} ></Route>
+          <Route path='/carrito' element={<CarritoContainer />} ></Route>
+          </Routes>
       </div>
 
     </BrowserRouter>

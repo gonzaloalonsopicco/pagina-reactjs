@@ -1,12 +1,16 @@
 import './ItemDetail.css'
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import {listaProductos} from '../../productos'
 import { cargaProductos } from '../../productos'
-import { useParams } from 'react-router-dom'
+import {Contador} from '../Contador/Contador'
+
 
 
 
 export function ItemDetail(){
+
+    // carga de producto detallado
 
     const [compo, setCompo] = useState({})
 
@@ -27,6 +31,13 @@ export function ItemDetail(){
         funcionAsincronaa();
     },[])
 
+    //contador 
+
+    const agregarCarrito =(contador) =>{
+        console.log(`se agrego ${contador} productos al carrito`)
+    }
+
+
     return(
 
         <div className="DivItemDetallado">
@@ -40,8 +51,7 @@ export function ItemDetail(){
                 <p>precio</p>
                 <p>{compo.precio} </p>
                 </div>
-                
-                <button className='boton'>Agregar</button>
+                <Contador stock={10} inicial={1} agregarCarrito={agregarCarrito} />
                 <p className='descripcion'>descripcion</p>
                 <p>{compo.descripcion} </p>
             </div>

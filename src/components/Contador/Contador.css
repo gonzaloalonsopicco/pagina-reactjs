@@ -2,10 +2,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#e0e0e0 ;
+    background-color:#eee ;
     width: 50%;
     margin: 1rem auto;
 }
+.divSumaResta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
 .botonContador{
-    margin: 1rem;
+    background-color: hsla(240,2%,50%,.15);
+    border: none;
+    font-size: 10px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.boton{
+    margin: 0.3125rem;
+    padding: 0.25rem 0.5rem;
+    background: rgb(101, 214, 240);
+    border-color: rgb(101, 214, 240);
 }
