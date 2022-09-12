@@ -1,6 +1,7 @@
 import './ItemDetail.css'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import {listaProductos} from '../../productos'
 import { cargaProductos } from '../../productos'
 import {Contador} from '../Contador/Contador'
@@ -52,6 +53,7 @@ export function ItemDetail(){
                 <p>{compo.precio} </p>
                 </div>
                 <Contador stock={10} inicial={1} agregarCarrito={agregarCarrito} />
+                <Link to={"/carrito"}><button className='boton'>finalizar compra</button></Link>
                 <p className='descripcion'>descripcion</p>
                 <p>{compo.descripcion} </p>
             </div>

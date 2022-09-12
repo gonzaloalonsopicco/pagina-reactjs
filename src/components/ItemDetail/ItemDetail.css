@@ -26,6 +26,7 @@
     padding: 0.25rem 0.5rem;
     background: rgb(101, 214, 240);
     border-color: rgb(101, 214, 240);
+    cursor: pointer;
 }
 .descripcion{
     font-size: 2rem;
