@@ -33,7 +33,7 @@ export const listaProductos = [
     },
     {
         id:4,
-        nombre:'Memoria Ram',
+        nombre:'Microprocesador',
         precio:'$250',
         imagen: microprocesadores,
         categoria:'microprocesador',
@@ -41,7 +41,7 @@ export const listaProductos = [
     },
     {
         id:5,
-        nombre:'Memoria Ram',
+        nombre:'Placa Madre',
         precio:'$250',
         imagen: placaMadre,
         categoria:'placa madre',
@@ -63,6 +63,6 @@ export const cargaProductos = ()=>{
     return new Promise((resolve, reject) =>{
         setTimeout(() => {
             resolve(listaProductos)
-        },2000);
+        },20);
     })
 }

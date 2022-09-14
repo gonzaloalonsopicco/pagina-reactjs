@@ -1,11 +1,11 @@
 import './ItemDetail.css'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom';
-import {listaProductos} from '../../productos'
+import { listaProductos } from '../../productos'
 import { cargaProductos } from '../../productos'
-import {Contador} from '../Contador/Contador'
-
+import { Contador } from '../Contador/Contador'
+import { CartContext } from '../../context/CartContext'
 
 
 
@@ -33,10 +33,18 @@ export function ItemDetail(){
     },[])
 
     //contador 
+    
+    const {anadirProducto} = useContext(CartContext);
 
     const agregarCarrito =(contador) =>{
         console.log(`se agrego ${contador} productos al carrito`)
+        const newproducto={...compo, cantidad:contador}
+        anadirProducto(newproducto)
+        console.log(newproducto)
     }
+
+
+    
 
 
     return(

@@ -1,0 +1,5 @@
+.divBotonVaciarCarrito{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 2rem 0 0;
+}

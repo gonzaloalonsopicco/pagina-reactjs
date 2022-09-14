@@ -1,11 +1,13 @@
-
-
+import React from "react"
+import { useContext } from "react"
+import {CarritoListProductos} from '../CarritoListProductos/CarritoListProductos'
 
 export function CarritoContainer(){
+
     return(
         <>
         <div>
-            carrtio
+            <CarritoListProductos></CarritoListProductos>
         </div>
         </>
     )

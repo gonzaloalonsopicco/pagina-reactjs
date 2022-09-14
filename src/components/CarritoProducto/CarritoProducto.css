@@ -1,0 +1,9 @@
+.imagenCarrito{
+    width: 10rem;
+}
+
+.divProductosCarrito{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
