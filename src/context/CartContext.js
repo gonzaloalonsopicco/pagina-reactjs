@@ -15,13 +15,15 @@ export const CartProvider = ({children}) => {
 
     const anadirProducto = (product, cant)=>{
         const newList = [...productosCarritoList];
-        
         if(isInCart(product.id)){
             const productoDuplicado = productosCarritoList.findIndex(element=>element.id == product.id);
             newList[productoDuplicado].cantidad = newList[productoDuplicado].cantidad + cant;
+            newList[productoDuplicado].subTotal = newList[productoDuplicado].cantidad * newList[productoDuplicado].precio;
             setProductoCarritoList(newList)
         }else{
-            const newList =[...productosCarritoList, product];
+            const newproducto={...product, subTotal:cant*product.precio}
+            const newList =[...productosCarritoList];
+            newList.push(newproducto);
             setProductoCarritoList(newList);
         }
        
@@ -37,8 +39,19 @@ export const CartProvider = ({children}) => {
         setProductoCarritoList([])
     }
 
+    const totalCantidadProductos = () =>{
+        const totalProductosCarrito = productosCarritoList.reduce((acc, item)=>acc + item.cantidad,0);
+        return totalProductosCarrito;
+    }
+
+    const precioFinalCarrito = () =>{
+        const precioFinal= productosCarritoList.reduce((acc, item)=>acc + item.subTotal,0);
+        return precioFinal;
+    }
+
     return(
-        <CartContext.Provider value={{productoCarrito:productosCarritoList, anadirProducto, eliminarproducto, eliminarTodosProductos}}>
+        <CartContext.Provider value={{productoCarrito:productosCarritoList, anadirProducto, eliminarproducto,
+         eliminarTodosProductos, totalCantidadProductos, precioFinalCarrito}}>
             {children}
         </CartContext.Provider>
 

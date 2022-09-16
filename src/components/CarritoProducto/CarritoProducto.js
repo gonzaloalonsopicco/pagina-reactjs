@@ -18,6 +18,7 @@ export function CarritoProducto({item}){
                         <h3>{item.nombre}</h3>
                         <p>{item.precio} </p>
                         <p>cantidad {item.cantidad} </p>
+                        <p>subTotal: {item.subTotal} </p>
                         <button onClick={()=>eliminarproducto(item.id)}>X</button>
                     </div>
         </div>

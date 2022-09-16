@@ -1,5 +1,23 @@
-.divBotonVaciarCarrito{
+.divBotonVaciarCarrito {
     display: flex;
     justify-content: flex-end;
     margin: 0 2rem 0 0;
+}
+.precioFinal{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+}
+
+.divSinProductos {
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgb(0 0 0 / 9%);
+    background: white;
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+}
+.divSinProductoscarrito{
+    display: flex;
+    justify-content: center;
 }

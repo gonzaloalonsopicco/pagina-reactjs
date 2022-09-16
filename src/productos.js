@@ -10,7 +10,7 @@ export const listaProductos = [
     {
         id:1,
         nombre:'Placa Madre',
-        precio:'$1000',
+        precio:1000,
         imagen: placaMadre,
         categoria:'placa madre',
         descripcion:'Marca - Gigabyte, Zócalo de CPU - Socket AM4, Dispositivos compatibles - Personal Computer, Tecnología de memoria RAM - DDR4, Procesadores compatibles - AMD A-Series y AMD Athlon, Tipo de set de chips - AMD A320, Velocidad de memoria - 3200 MHz, Plataforma - Windows 8.1, Windows 8 Pro, Windows 8, Windows 10, Series - GA-A320M-S2H, Modelo de CPU - AMD Athlon.'
@@ -18,7 +18,7 @@ export const listaProductos = [
     {
         id:2,
         nombre:'Microprocesador',
-        precio:'$500',
+        precio:500,
         imagen: microprocesadores,
         categoria:'microprocesador',
         descripcion:'descripcion'
@@ -26,7 +26,7 @@ export const listaProductos = [
     {
         id:3,
         nombre:'Memoria Ram',
-        precio:'$250',
+        precio:250,
         imagen: memoriasRam,
         categoria:'memoria ram',
         descripcion:'descripcion'
@@ -34,7 +34,7 @@ export const listaProductos = [
     {
         id:4,
         nombre:'Microprocesador',
-        precio:'$250',
+        precio:250,
         imagen: microprocesadores,
         categoria:'microprocesador',
         descripcion:'descripcion'
@@ -42,7 +42,7 @@ export const listaProductos = [
     {
         id:5,
         nombre:'Placa Madre',
-        precio:'$250',
+        precio:250,
         imagen: placaMadre,
         categoria:'placa madre',
         descripcion:'descripcion'
@@ -50,7 +50,7 @@ export const listaProductos = [
     {
         id:6,
         nombre:'Memoria Ram',
-        precio:'$250',
+        precio:250,
         imagen: memoriasRam,
         categoria:'memoria ram',
         descripcion:'descripcion'
