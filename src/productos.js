@@ -1,10 +1,11 @@
+/*
 import placaMadre from './imagenes/placaMadre.jpg'
 import microprocesadores from './imagenes/microprocesadores.jpg'
 import memoriasRam from './imagenes/memoriasRam.jpg'
 
+*/
 
-
-
+/*
 
 export const listaProductos = [
     {
@@ -57,7 +58,7 @@ export const listaProductos = [
     },
 
 ]
-
+/*
 
 export const cargaProductos = ()=>{
     return new Promise((resolve, reject) =>{
@@ -66,3 +67,4 @@ export const cargaProductos = ()=>{
         },20);
     })
 }
+*/

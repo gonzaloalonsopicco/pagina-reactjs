@@ -2,10 +2,10 @@ import './ItemDetail.css'
 import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom';
-import { listaProductos } from '../../productos'
-import { cargaProductos } from '../../productos'
 import { Contador } from '../Contador/Contador'
 import { CartContext } from '../../context/CartContext'
+import { doc, getDoc} from 'firebase/firestore'
+import { baseDatos } from '../../utils/firebase';
 
 
 
@@ -14,14 +14,27 @@ export function ItemDetail() {
     // carga de producto detallado
 
     const [compo, setCompo] = useState({})
+
     const [cantid, setCantida] = useState(0)
 
     const { ids } = useParams()
 
     useEffect(() => {
+            const queryref = doc(baseDatos, "listaProductos", ids)
+            getDoc(queryref).then(response=>{
+                const newdoc = {
+                    ...response.data(),
+                    id:response.id
+                }
+                setCompo(newdoc)
+            })      
+    }, [])
+
+/*
+    useEffect(() => {
         const funcionAsincronaa = async () => {
             try {
-                const producto = await cargaProductos()
+                //const producto = await cargaProductos()
                 const productoDtallado = await producto.find(prod => prod.id == ids)
                 setCompo(productoDtallado)
 
@@ -32,7 +45,7 @@ export function ItemDetail() {
         }
         funcionAsincronaa();
     }, [])
-
+*/
     //contador 
 
     const { anadirProducto } = useContext(CartContext);

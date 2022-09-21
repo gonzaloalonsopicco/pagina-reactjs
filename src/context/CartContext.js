@@ -1,11 +1,9 @@
 import { createContext, useState } from "react";
-import { listaProductos } from "../productos";
 
 export const CartContext = createContext();
 
 export const CartProvider = ({children}) => {
 
-    //const productosCarritoList = listaProductos;
     const [productosCarritoList, setProductoCarritoList] = useState([]);
 
     const isInCart = (id)=>{
