@@ -4,6 +4,7 @@ import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Link } from 'react-router-dom'
 import { CarritoProducto } from '../CarritoProducto/CarritoProducto.js'
+import { Formulario } from "../Formulario/Formulario"
 
 
 
@@ -30,6 +31,7 @@ export function CarritoListProductos() {
                             <p>TOTAL :</p>
                             <p>{precioFinalCarrito()}</p>
                         </div>
+                        <Formulario></Formulario>
                     </>
                     :
                     <>

@@ -1,0 +1,19 @@
+.formularioDiv{
+    display: flex;
+    margin: 1rem auto;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50%;
+    flex-direction: column;
+}
+.formularioForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formularioInputs{
+    margin: 0.5rem;
+}
+.formularioBoton{
+    margin: 0.5rem;
+}
