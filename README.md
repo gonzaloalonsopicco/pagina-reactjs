@@ -5,11 +5,12 @@ COMPONENTES PC
 
 es un pagina de ventas orientada a comonentes de computadoras gamer 
 
+# imagen del inicio
 
-  ![Image text](C:\Users\Gonzalo\OneDrive\Imágenes\Capturas de pantalla)
+  ![Image text](file:///C:/Users/Gonzalo/OneDrive/Im%C3%A1genes/Capturas%20de%20pantalla/inicio.png)
 
 
-# dependencies
+# dependencias
 
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
