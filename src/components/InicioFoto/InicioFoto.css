@@ -1,6 +1,16 @@
-.fotoinicio{
+.fotoinicio {
     height: 100%;
     object-fit: fill;
     width: 100%;
+    margin: 0 0 -5px 0;
 }
 
+@media only screen and (max-width: 768px) {
+
+    .fotoinicio {
+        height: 200px;
+        object-fit: fill;
+        width: 100%;
+        margin: 0 0 -5px 0;
+    }
+}

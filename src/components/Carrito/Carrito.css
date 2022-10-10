@@ -1,5 +1,30 @@
-.carritoNumero{
+.divCarrito {
+    background: white;
+    border-radius: 50%;
+    padding: 0.35rem 0.6rem;
+}
+
+.carritoNumero {
     position: absolute;
-    right: 33px;
-    top: 26px;
+    right: 41px;
+    top: 31px;
+}
+
+@media only screen and (max-width: 425px) {
+    .iconoCarrito {
+        width: 2.5rem;
+    }
+
+    .divCarrito {
+        background: white;
+        border-radius: 50%;
+        padding: 0.2rem 0.3rem;
+    }
+
+    .carritoNumero {
+        position: absolute;
+        right: 33px;
+        top: 27px;
+        font-size: 0.9rem;
+    }
 }

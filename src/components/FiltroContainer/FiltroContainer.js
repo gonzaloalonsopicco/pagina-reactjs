@@ -1,11 +1,9 @@
 import { Filtro } from "../Filtro/Filtro"
 
-
-
-export function FiltroContainer(){
-    return(
+export function FiltroContainer() {
+    return (
         <>
-        <Filtro />
+            <Filtro />
         </>
     )
 }

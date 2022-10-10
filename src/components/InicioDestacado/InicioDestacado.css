@@ -1,0 +1,20 @@
+.divInicio {
+    padding: 2rem 0 0 0;
+    background: rgb(238, 238, 238);
+}
+
+.tituloInicio {
+    font-size: 1.9rem;
+    padding: 0rem 1rem;
+}
+
+.divProductosDestacados {
+    padding: 3rem;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .divProductosDestacados {
+        padding: 2rem;
+    }
+}

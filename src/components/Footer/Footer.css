@@ -1,0 +1,22 @@
+.divFooter {
+    background: black;
+}
+
+.divFlexFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 1rem;
+    padding: 0.4rem;
+}
+
+.textoFooter {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .divFlexFooter {
+        display: flex;
+        flex-direction: column;
+    }
+}

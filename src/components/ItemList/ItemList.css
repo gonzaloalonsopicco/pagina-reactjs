@@ -1,17 +1,19 @@
-.article{
+.article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-area: article;
     height: 100%;
     grid-gap: 1rem;
 }
-/* .article2{
-    display: grid;
-    grid-template-areas:
-        "aside article article"
-        "aside article article";
-    grid-template-columns: 13rem 1fr;
-    column-gap: 1rem;
-    padding: 4rem;
-    background: rgb(238, 238, 238);
-} */
+
+@media only screen and (max-width: 1024px) {
+    .article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

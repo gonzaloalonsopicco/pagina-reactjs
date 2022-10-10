@@ -1,11 +1,10 @@
 import './InicioFoto.css'
 import fotoinicio from '../../imagenes/fotoinicio.jpg'
 
-
-export function InicioFoto(){
-    return(
+export function InicioFoto() {
+    return (
         <>
-        <img src={fotoinicio} className="fotoinicio"></img>
+            <img src={fotoinicio} alt="" className="fotoinicio"></img>
         </>
     )
 }

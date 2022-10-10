@@ -1,9 +1,27 @@
-.imagenCarrito{
-    width: 10rem;
-}
-
-.divProductosCarrito{
+.divProductosCarrito {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0 1rem;
+    column-gap: 1rem;
+}
+
+.imagenCarrito {
+    width: 10rem;
+}
+
+.eliminarProductosCarrito {
+    padding: 0.4rem;
+    line-height: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background: #dc3545;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .imagenCarrito {
+        width: 5rem;
+    }
 }

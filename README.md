@@ -1,3 +1,28 @@
+# nombre de la pagina
+COMPONENTES PC
+
+# descripcion 
+
+es un pagina de ventas orientada a comonentes de computadoras gamer 
+
+
+  ![Image text](C:\Users\Gonzalo\OneDrive\Imágenes\Capturas de pantalla)
+
+
+# dependencies
+
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "firebase": "^9.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

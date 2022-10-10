@@ -2,14 +2,14 @@ import './ItemListContainer.css'
 import { ItemList } from '../ItemList/ItemList'
 import { FiltroContainer } from '../FiltroContainer/FiltroContainer'
 
-export function ItemListContainer(){
+export function ItemListContainer() {
 
-    return(
+    return (
         <>
-        <div className='article2'>
-        <ItemList/>
-        <FiltroContainer></FiltroContainer>
-        </div>
+            <div className='article2'>
+                <ItemList />
+                <FiltroContainer />
+            </div>
         </>
     )
 }

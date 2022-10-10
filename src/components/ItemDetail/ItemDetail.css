@@ -1,34 +1,137 @@
-.DivItemDetallado{
+.DivItemDetallado {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    grid-gap: 2rem;    
+    grid-gap: 2rem;
     padding: 4rem;
-    background: #eee
 }
 
-.divImagenDetallado{
+.divImagenDetallado {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0px 3px 7px rgb(0 0 0 / 30%);
     background: #fdfdfd;
+    max-width: 800px;
+    max-height: 650px;
+    margin: auto;
 }
-.imagenDetallado{
+
+.imagenDetallado {
     width: 90%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 650px;
 }
-.precio{
+
+.titiloProductoDetallado {
+    font-size: 2.5rem;
+}
+
+.divPrecioDetallado {
     display: flex;
     justify-content: space-evenly;
     margin: 1rem;
 }
-.boton{
-    margin: 0.3125rem;
-    padding: 0.25rem 0.5rem;
-    background: rgb(101, 214, 240);
-    border-color: rgb(101, 214, 240);
-    cursor: pointer;
+
+.precioDetallado {
+    font-size: 2rem;
 }
 
-.descripcion{
+.boton {
+    margin: 0.3125rem;
+    padding: 0.50rem 1rem;
+    background: #92c800;
+    cursor: pointer;
+    font-size: 1rem;
+    border: thick;
+    border-radius: 5px;
+}
+
+.tituloDescripcionDetallado {
     font-size: 2rem;
+}
+
+.textoDescripcionDetallado {
+    padding: 2rem 3rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .DivItemDetallado {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        grid-gap: 2rem;
+        padding: 4rem;
+    }
+
+    .divImagenDetallado {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 3px 7px rgb(0 0 0 / 30%);
+        background: #fdfdfd;
+        max-width: 500px;
+        max-height: 500px;
+        min-height: 300px;
+        margin: auto;
+    }
+
+    .imagenDetallado {
+        width: 90%;
+        height: 100%;
+        max-height: 500px;
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .titiloProductoDetallado {
+        font-size: 2rem;
+    }
+
+    .precioDetallado {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .DivItemDetallado {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        grid-gap: 2rem;
+        padding: 4rem;
+    }
+
+    .titiloProductoDetallado {
+        font-size: 1.5rem;
+    }
+
+    .precioDetallado {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .article {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-area: article;
+        height: 100%;
+        grid-gap: 1rem;
+    }
+
+    .textoDescripcionDetallado {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .article {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-area: article;
+        height: 100%;
+        grid-gap: 1rem;
+    }
 }

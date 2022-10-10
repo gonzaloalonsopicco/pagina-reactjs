@@ -1,19 +1,69 @@
-.formularioDiv{
+.formularioDiv {
     display: flex;
     margin: 1rem auto;
-    border: 1px solid;
     border-radius: 5px;
     width: 50%;
     flex-direction: column;
 }
-.formularioForm{
+
+.formularioForm {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 0.5rem;
+    margin-bottom: 3rem;
 }
-.formularioInputs{
+
+.formularioInputs {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
     margin: 0.5rem;
 }
-.formularioBoton{
+
+.formularioBoton {
     margin: 0.5rem;
+}
+
+.formularioDivExteriorConfirmar {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1060;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 1rem;
+    transition: background-color .2s;
+    background: rgba(0, 0, 0, .4);
+}
+
+.FormularioDivInteriorConfirmar {
+    width: 30rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #545454;
+    animation: swal2-show .3s;
+}
+
+.FormularioTexto {
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .FormularioDivInteriorConfirmar {
+        width: auto;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        background: #fff;
+        color: #545454;
+        animation: swal2-show .3s;
+    }
 }
