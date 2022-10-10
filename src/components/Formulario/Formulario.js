@@ -42,7 +42,7 @@ export function Formulario() {
 
     return (
         <div className='formularioDiv'>
-            <h2 className='tituloCarrito'>comfirmar compra</h2>
+            <h2 className='tituloCarrito'>confirmar compra</h2>
             <form className='formularioForm' onSubmit={enviarOrden}>
                 <input className='formularioInputs' type="text" placeholder='nombre' name="nombre" onChange={(e) => inputChange(e)}></input>
                 <input className='formularioInputs' type="number" placeholder='telefono' name="celular" onChange={(e) => inputChange(e)}></input>

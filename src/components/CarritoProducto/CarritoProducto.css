@@ -21,6 +21,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .divProductosCarrito {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 0rem;
+        margin: 1rem;
+    }
+    
     .imagenCarrito {
         width: 5rem;
     }

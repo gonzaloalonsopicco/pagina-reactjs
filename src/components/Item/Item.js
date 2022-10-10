@@ -12,7 +12,7 @@ export function Item({ componente }) {
                 </div>
                 <div className="articleDivBotonPrecio">
                     <p className="articlePrecio">precio</p>
-                    <p className="articlePrecio">{componente.precio} </p>
+                    <p className="articlePrecio">${componente.precio} </p>
                 </div>
             </div>
         </>

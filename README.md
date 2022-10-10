@@ -7,7 +7,7 @@ es un pagina de ventas orientada a comonentes de computadoras gamer
 
 # imagen del inicio
 
-  ![imagen inicio](file:///C:/Users/Gonzalo/OneDrive/Documentos/react%20js/tienda-componentes-pc/src/imagenes/inicio.png)
+  <img width="900" alt="inicio" src="https://user-images.githubusercontent.com/95266039/194961764-c021a01f-0c04-486d-a7e5-225ef69b5be4.png">
 
 
 # dependencias
@@ -22,6 +22,9 @@ es un pagina de ventas orientada a comonentes de computadoras gamer
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
 
+# ruta de compra
+
+https://user-images.githubusercontent.com/95266039/194965919-97ced283-118a-4059-a0ab-b98a01a4700b.mp4
 
 
 # Getting Started with Create React App

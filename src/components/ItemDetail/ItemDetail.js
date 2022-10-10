@@ -55,11 +55,11 @@ export function ItemDetail() {
                     <Contador stock={10} inicial={1} agregarCarrito={agregarCarrito} />
                     {
                         cantid > 0 &&
-                        <Link to={"/carrito"}><button className='boton'>finalizar compra</button></Link>
+                        <Link to={"/carrito"}><button className='boton'>ir al carrito</button></Link>
                     }
                 </div>
             </div>
-            <p className='tituloDescripcionDetallado'>descripcion</p>
+            <p className='tituloDescripcionDetallado'>descripción</p>
             <p className='textoDescripcionDetallado'>{compo.descripcion} </p>
         </>
     )
