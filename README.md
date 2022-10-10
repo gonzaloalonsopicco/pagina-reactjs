@@ -7,7 +7,7 @@ es un pagina de ventas orientada a comonentes de computadoras gamer
 
 # imagen del inicio
 
-  ![Image text](file:///C:/Users/Gonzalo/OneDrive/Im%C3%A1genes/Capturas%20de%20pantalla/inicio.png)
+  ![imagen inicio](file:///C:/Users/Gonzalo/OneDrive/Documentos/react%20js/tienda-componentes-pc/src/imagenes/inicio.png)
 
 
 # dependencias
