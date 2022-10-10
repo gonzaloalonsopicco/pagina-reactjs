@@ -21,6 +21,7 @@ es un pagina de ventas orientada a comonentes de computadoras gamer
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
+    
 
 # ruta de compra
 
